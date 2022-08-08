@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang=”en”>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset=”utf-8″>
+  <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+  <script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js”></script>
+  <link rel=”stylesheet” href=”css/bootstrap.min.css” />
+  <link rel=”stylesheet” href=”css/bootstrap.min.css”>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <!--page-icon-------------------->
+  <link rel="shortcut icon"
+    href="../Pictures/kisspng-computer-icons-hobby-painting-hobby-5ad84b2bad8012.3758332515241244597107.jpg">
+  <!--stylesheet------------------->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+      background-color: aliceblue;
+    }
+
+    table {
+      background-color: gray;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .conta {
+      width: 100%;
+      display: flex;
+      padding: 0 20px;
+    }
+
+    .slid {
+      height: 100%;
+      border-radius: 20px;
+      margin: 10px;
+      cursor: pointer;
+      color: #fff;
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      transition: all 0.7s ease-in-out;
+      /*filter: blur(4px);*/
+    }
+
+    .slid.active {
+      flex: 10;
+      filter: blur(0px);
+    }
+
+    .box {
+      width: 100%;
+      box-shadow: 2px 2px 30px rgba(0, 0, 0, 0, 2);
+      border-radius: 10px;
+      overflow: hidden;
+      position: initial;
+      left: 50%;
+      top: 50%;
+      transform: translate(0%, 0%);
+    }
+
+    .slide-img {
+      height: 300px;
+    }
+
+    .slide-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .detail-box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    .type {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .type a {
+      color: #222222;
+      margin: 5px 0px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding-right: 8px;
+    }
+
+    .type span {
+      color: rgba(26, 26, 26, 0.5);
+    }
+
+    .price {
+      color: #333333;
+      font-weight: 600;
+      font-size: 1.1rem;
+      font-family: 'Times New Roman', Times, serif;
+      letter-spacing: 0.5px;
+    }
+
+    .overlay {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background-color: rgba(92, 95, 236, 0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .buy-btn {
+      width: 160px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #ffffff;
+      color: #252525;
+      font-weight: 700;
+      letter-spacing: 1px;
+      font-family: 'Times New Roman', Times, serif;
+      border-radius: 20px;
+      box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .buy-btn:hover .overlay {
+      color: #ffffff;
+      background-color: #f15fa3;
+      transition: all ease 0.3s;
+    }
+
+    .overlay {
+      visibility: hidden;
+    }
+
+    .slide-img:hover .overlay {
+      visibility: visible;
+      animation: fade 0.5s;
+    }
+
+    @keyframes fade {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <table border="0" width="100%" class="conta">
+    <tr>
+      <td height="20"></td>
+    </tr>
+    <tr>
+      <td>
+        <!--box-slider--------------->
+        <div class="box">
+          <!--img-box-------------->
+          <div class="slide-img slid">
+            <img src="../Pictures/1659529276904.jpg"/>
+            <!--overlayer-->
+            <div class="overlay">
+              <!--buy-btn---------------->
+              <a class="buy-btn" href="https://www.instagram.com/p/CDNYPe9hCohp0aYKZvfqOi41u3NPfuQ6aoDIcI0/?igshid=MDJmNzVkMjY=">Klik</a>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <!--box-slider--------------->
+        <div class="box">
+          <!--img-box-------------->
+          <div class="slide-img slid">
+            <img src="../Pictures/1659529649996.jpg">
+            <!--overlayer-->
+            <div class="overlay">
+              <!--buy-btn---------------->
+              <a class="buy-btn" href="https://www.instagram.com/p/CD5hC3OHjnbM5g0phgMKbRdvNMECaWBGasMVHI0/?igshid=MDJmNzVkMjY=">Klik</a>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <!--box-slider--------------->
+        <div class="box">
+          <!--img-box-------------->
+          <div class="slide-img slid">
+            <img src="../Pictures/1659529276918.jpg">
+            <!--overlayer-->
+            <div class="overlay">
+              <!--buy-btn---------------->
+              <a class="buy-btn" href="https://www.instagram.com/p/CRRSUdgn5fKbX_TQQm8pjGJjphvuJL9tni8Xv40/?igshid=MDJmNzVkMjY=">Klik</a>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <!--box-slider--------------->
+        <div class="box">
+          <!--img-box-------------->
+          <div class="slide-img slid">
+            <img src="../Pictures/1659529429762.jpg">
+            <!--overlayer-->
+            <div class="overlay">
+              <!--buy-btn---------------->
+              <a class="buy-btn" href="https://www.instagram.com/p/CBXIvxiHej1/?igshid=MDJmNzVkMjY=">Klik</a>
+            </div>
+          </div>
+        </div>
+      </td>
+      <td>
+        <!--box-slider--------------->
+        <div class="box">
+          <!--img-box-------------->
+          <div class="slide-img slid">
+            <img src="../Pictures/1659529429784.jpg">
+            <!--overlayer-->
+            <div class="overlay">
+              <!--buy-btn---------------->
+              <a class="buy-btn" href="https://www.instagram.com/p/CQkJr6Hnjil/?igshid=MDJmNzVkMjY=">Klik</a>
+            </div>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td height="20"></td>
+    </tr>
+   </table>
+
+
+
+
+    <!--script-link-------------->
+    <script type="text/javascript" src="js/script.jp"></script>
+</body>
+
+</html>
