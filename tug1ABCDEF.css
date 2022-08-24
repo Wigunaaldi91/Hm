@@ -84,6 +84,14 @@
     cursor: pointer;
     overflow: hidden;
   }
+  .buttona4 {
+    color: white;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+  }
   
   .bg1 {
     background-image: url("../gmbr1.jpg");
